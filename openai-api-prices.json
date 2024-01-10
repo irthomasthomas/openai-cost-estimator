@@ -1,0 +1,165 @@
+{
+    "language_models": {
+        "GPT-4 Turbo": {
+            "description": "With 128k context, fresher knowledge and the broadest set of capabilities, GPT-4 Turbo is more powerful than GPT-4 and offered at a lower price.",
+            "models": [
+                {
+                    "name": "gpt-4-1106-preview",
+                    "input_price": 0.01,
+                    "output_price": 0.03,
+                    "context_window": 128000,
+                    "max_output_tokens": 4096,
+                    "training_data_cutoff_isodate": "2023-04-01"
+                },
+                {
+                    "name": "gpt-4-1106-vision-preview",
+                    "input_price": 0.01,
+                    "output_price": 0.03,
+                    "context_window": 128000,
+                    "max_output_tokens": 4096,
+                    "training_data_cutoff_isodate": "2023-04-01"
+                }
+            ]
+        },
+        "GPT-4": {
+            "description": "With broad general knowledge and domain expertise, GPT-4 can follow complex instructions in natural language and solve difficult problems with accuracy.",
+            "models": [
+                {
+                    "name": "gpt-4",
+                    "input_price": 0.03,
+                    "output_price": 0.06
+                },
+                {
+                    "name": "gpt-4-32k",
+                    "input_price": 0.06,
+                    "output_price": 0.12
+                }
+            ]
+        },
+        "GPT-3.5 Turbo": {
+            "description": "GPT-3.5 Turbo models are capable and cost-effective.",
+            "models": [
+                {
+                    "name": "gpt-3.5-turbo-1106",
+                    "input_price": 0.0010,
+                    "output_price": 0.0020
+                },
+                {
+                    "name": "gpt-3.5-turbo-instruct",
+                    "input_price": 0.0015,
+                    "output_price": 0.0020
+                }
+            ]
+        },
+        "Assistants API": {
+            "description": "Assistants API and tools make it easy for developers to build AI assistants within their own applications.",
+            "tools": [
+                {
+                    "name": "Code interpreter",
+                    "input_price": 0.03,
+                    "free_until": "2023-11-17"
+                },
+                {
+                    "name": "Retrieval",
+                    "price_per_gb_per_day": 0.20,
+                    "free_until": "2023-11-17"
+                }
+            ]
+        },
+        "Fine-tuning models": {
+            "models": [
+                {
+                    "name": "gpt-3.5-turbo",
+                    "training_price": 0.0080,
+                    "input_usage_price": 0.0030,
+                    "output_usage_price": 0.0060
+                },
+                {
+                    "name": "davinci-002",
+                    "training_price": 0.0060,
+                    "input_usage_price": 0.0120,
+                    "output_usage_price": 0.0120
+                },
+                {
+                    "name": "babbage-002",
+                    "training_price": 0.0004,
+                    "input_usage_price": 0.0016,
+                    "output_usage_price": 0.0016
+                }
+            ]
+        },
+        "Embedding models": {
+            "models": [
+                {
+                    "name": "ada v2",
+                    "usage_price": 0.0001
+                }
+            ]
+        },
+        "Base models": {
+            "models": [
+                {
+                    "name": "davinci-002",
+                    "usage_price": 0.0020
+                },
+                {
+                    "name": "babbage-002",
+                    "usage_price": 0.0004
+                }
+            ]
+        }
+    },
+    "other_models": {
+        "Image models": {
+            "DALL·E 3": {
+                "Standard": [
+                    {
+                        "resolution": "1024x1024",
+                        "price_per_image": 0.040
+                    },
+                    {
+                        "resolution": "1024x1792, 1792x1024",
+                        "price_per_image": 0.080
+                    }
+                ],
+                "HD": [
+                    {
+                        "resolution": "1024x1024",
+                        "price_per_image": 0.080
+                    },
+                    {
+                        "resolution": "1024x1792, 1792x1024",
+                        "price_per_image": 0.120
+                    }
+                ]
+            },
+            "DALL·E 2": [
+                {
+                    "resolution": "1024x1024",
+                    "price_per_image": 0.020
+                },
+                {
+                    "resolution": "512x512",
+                    "price_per_image": 0.018
+                },
+                {
+                    "resolution": "256x256",
+                    "price_per_image": 0.016
+                }
+            ]
+        },
+        "Audio models": {
+            "Whisper": {
+                "usage_price_per_minute": 0.006
+            },
+            "TTS": {
+                "standard": {
+                    "usage_price_per_1k_characters": 0.015
+                },
+                "HD": {
+                    "usage_price_per_1k_characters": 0.030
+                }
+            }
+        }
+    }
+}
